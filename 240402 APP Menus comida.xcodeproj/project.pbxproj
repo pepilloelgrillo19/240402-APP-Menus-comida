@@ -14,6 +14,11 @@
 		A04675022BBC407D0070D213 /* _40402_APP_Menus_comidaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04675012BBC407D0070D213 /* _40402_APP_Menus_comidaTests.swift */; };
 		A046750C2BBC407D0070D213 /* _40402_APP_Menus_comidaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046750B2BBC407D0070D213 /* _40402_APP_Menus_comidaUITests.swift */; };
 		A046750E2BBC407D0070D213 /* _40402_APP_Menus_comidaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046750D2BBC407D0070D213 /* _40402_APP_Menus_comidaUITestsLaunchTests.swift */; };
+		A046751B2BBC57F30070D213 /* VistaPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046751A2BBC57F30070D213 /* VistaPedido.swift */; };
+		A046751D2BBC59D60070D213 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046751C2BBC59D60070D213 /* Helper.swift */; };
+		A04675212BBC5E6F0070D213 /* Comida.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04675202BBC5E6F0070D213 /* Comida.swift */; };
+		A046752D2BBC70470070D213 /* DetalleComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046752C2BBC70470070D213 /* DetalleComida.swift */; };
+		A04675312BBC75340070D213 /* fullMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04675302BBC75340070D213 /* fullMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		A04675072BBC407D0070D213 /* 240402 APP Menus comidaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "240402 APP Menus comidaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A046750B2BBC407D0070D213 /* _40402_APP_Menus_comidaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _40402_APP_Menus_comidaUITests.swift; sourceTree = "<group>"; };
 		A046750D2BBC407D0070D213 /* _40402_APP_Menus_comidaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _40402_APP_Menus_comidaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A046751A2BBC57F30070D213 /* VistaPedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPedido.swift; sourceTree = "<group>"; };
+		A046751C2BBC59D60070D213 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A04675202BBC5E6F0070D213 /* Comida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comida.swift; sourceTree = "<group>"; };
+		A046752C2BBC70470070D213 /* DetalleComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleComida.swift; sourceTree = "<group>"; };
+		A04675302BBC75340070D213 /* fullMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fullMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +105,14 @@
 			isa = PBXGroup;
 			children = (
 				A04674F02BBC407B0070D213 /* _40402_APP_Menus_comidaApp.swift */,
+				A04675202BBC5E6F0070D213 /* Comida.swift */,
+				A046751C2BBC59D60070D213 /* Helper.swift */,
+				A046751A2BBC57F30070D213 /* VistaPedido.swift */,
 				A04674F22BBC407B0070D213 /* ContentView.swift */,
 				A04674F42BBC407C0070D213 /* Assets.xcassets */,
 				A04674F62BBC407C0070D213 /* Preview Content */,
+				A046752C2BBC70470070D213 /* DetalleComida.swift */,
+				A04675302BBC75340070D213 /* fullMenu.swift */,
 			);
 			path = "240402 APP Menus comida";
 			sourceTree = "<group>";
@@ -258,7 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04674F32BBC407B0070D213 /* ContentView.swift in Sources */,
+				A04675312BBC75340070D213 /* fullMenu.swift in Sources */,
 				A04674F12BBC407B0070D213 /* _40402_APP_Menus_comidaApp.swift in Sources */,
+				A04675212BBC5E6F0070D213 /* Comida.swift in Sources */,
+				A046751B2BBC57F30070D213 /* VistaPedido.swift in Sources */,
+				A046752D2BBC70470070D213 /* DetalleComida.swift in Sources */,
+				A046751D2BBC59D60070D213 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

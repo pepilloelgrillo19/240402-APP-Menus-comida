@@ -9,15 +9,47 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List{
+                NavigationLink(destination: VistaPedido(categoriaActual: .mediterranea)){
+                    VistaTipoComida(nombreImagen: "mediterranea", nombreComida: "Mediterránea")}
+                NavigationLink(destination: VistaPedido(categoriaActual: .asiatica)){
+                    VistaTipoComida(nombreImagen: "arabe", nombreComida: "Árabe")}
+                NavigationLink(destination: VistaPedido(categoriaActual: .asiatica)){
+                    VistaTipoComida(nombreImagen: "asiatica", nombreComida: "Asiática")}
+                NavigationLink(destination: VistaPedido(categoriaActual: .hindu)){
+                    VistaTipoComida(nombreImagen: "hindu", nombreComida: "Hindú")}
+            }
+            .navigationTitle("Haga su pedido")
         }
-        .padding()
+        
     }
 }
+
+struct VistaTipoComida: View {
+    var nombreImagen: String
+    var nombreComida: String
+    var body : some View {
+        HStack{
+            Spacer()
+            ZStack{
+                Image(nombreImagen)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width:300, height: 100)
+                    .clipped()
+                    .cornerRadius(20.0)
+                Text(nombreComida)
+                    .font(.custom("Helvetica-Medium", size:34))
+                    .bold()
+                    .foregroundColor(.white)
+            }
+            Spacer()
+        }.padding(.top, 5)
+            .padding(.bottom,5)
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
